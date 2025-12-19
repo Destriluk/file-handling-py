@@ -1,3 +1,4 @@
+import os
 file = open("myfile.txt","w")
 file.write("Name : Ariho\n")
 file.write("Contact : +256751659154\n")
@@ -19,3 +20,8 @@ file.close()
 file = open("myfile.txt","r")
 print(file.readline())
 file.close()
+# part 2
+if os.path.exists("myfile.pdf"):
+    print("file found")
+else:
+    print("file not found")
